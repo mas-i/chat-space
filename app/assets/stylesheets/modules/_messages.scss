@@ -47,6 +47,7 @@
   height: calc( 100vh - 100px );
   background-color: #2f3e51;
   padding: 0 20px;
+  overflow: scroll;
 }
 
 .group{
@@ -61,6 +62,10 @@
     font-size: 11px;
     color: #ffffff;
     font-weight: bold;
+  }
+  
+  a{
+    text-decoration: none;
   }
 }
 
@@ -110,6 +115,7 @@
     height: calc( 100vh - 190px );
     background-color: #fafafa;
     padding: 35px 0 0 40px;
+    overflow: scroll;
 }
 
 .message-box{
@@ -160,7 +166,7 @@
   border: none;
 }
 
-.image{
+.far{
   position: absolute;
   top: 15px;
   right: 10px;
