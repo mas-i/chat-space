@@ -27,6 +27,7 @@ development:
 test:
   <<: *default
   database: chat_space_test
+  
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -50,5 +51,6 @@ test:
 production:
   <<: *default
   database: chat_space_production
-  username: chat_space
-  password: <%= ENV['CHAT_SPACE_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
